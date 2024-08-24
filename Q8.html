@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors Example</title>
+    <style>
+        /* Attribute selector for elements with the 'title' attribute */
+        [title] {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* Attribute selector for elements with a specific 'class' attribute value */
+        [class="highlight"] {
+            background-color: yellow;
+        }
+
+        /* Attribute selector for elements with a specific 'data-type' attribute prefix */
+        [data-type^="main"] {
+            border: 2px solid green;
+        }
+
+        /* Attribute selector for elements with a 'lang' attribute ending in 'en' */
+        [lang$="en"] {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <p title="This is a title">This paragraph has a title attribute.</p>
+    <p class="highlight">This paragraph has a class attribute with the value 'highlight'.</p>
+    <p data-type="main-content">This paragraph has a data-type attribute that starts with 'main'.</p>
+    <p lang="en-US">This paragraph has a lang attribute ending with 'en'.</p>
+</body>
+</html>

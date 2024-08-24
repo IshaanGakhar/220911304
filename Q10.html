@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Bullet Points</title>
+    <style>
+        ul {
+            list-style-type: disc;
+        }
+
+        li a {
+            text-decoration: underline;
+            color: black;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        li a:hover {
+            font-weight: bold;
+        }
+        
+        .pink {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" onclick="makeAllPink()">Singapore</a></li>
+        <li><a href="#" onclick="makeAllPink()">United States</a></li>
+        <li><a href="#" onclick="makeAllPink()">Germany</a></li>
+        <li><a href="#" onclick="makeAllPink()">Canada</a></li>
+    </ul>
+
+    <script>
+        function makeAllPink() {
+            var links = document.querySelectorAll('li a');
+            links.forEach(function(link) {
+                link.classList.add('pink');
+            });
+        }
+    </script>
+</body>
+</html>

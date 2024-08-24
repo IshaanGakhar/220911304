@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admission Form</title>
+<style>
+    .details-frame {
+        border: 1px solid rgb(14, 112, 45);
+        padding: 10px;
+        border-radius: 15px;
+        display: inline-block;
+    }
+</style>
+</head>
+<body>
+<h1 style="text-align: center;">ADMISSION FORM</h1>
+<h2 style="color: blue;">DETAILS</h2>
+<form class="details-frame" action="/submit-form" method="post" enctype="multipart/form-data">
+    <label for="name"><b>NAME: </b></label>
+    <input type="text" id="name" name="name" placeholder="Apna naam idhar daalein" required><br><br>
+
+    <label for="address"><b>ADDRESS: </b></label>
+    <input type="text" id="address" name="address" placeholder="Apna address idhar daalein" required><br><br>
+
+    <label for="password"><b>PASSWORD: </b></label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label><b>GENDER: </b></label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male"><b>Male</b></label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female"><b>Female</b></label><br><br>
+
+    <label for="vehicle"><b>OWN VEHICLE:</b></label>
+    <input type="checkbox" id="vehicle" name="vehicle"><br><br>
+    <label for="hostel"><b>HOSTEL REQUIRED</b></label>
+    <input type="checkbox" id="hostel" name="hostel"><br><br>
+
+    <label for="country"><b>COUNTRY:</b></label>
+    <select id="country" name="country">
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="canada">Canada</option>
+        <option value="india">India</option>
+        <option value="australia">Australia</option>
+    </select><br><br>
+
+    <label for="comments"><b>COMMENTS:</b></label>
+    <textarea id="comments" name="comments" placeholder="Place your text here"></textarea><br><br>
+
+    <label for="attachments"><b>ATTACHMENTS</b></label>
+    <input type="file" id="attachments" name="attachments" multiple><br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Clear</button>
+
+</form><br><br>
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="104" height="142">
+</body>
+</html>

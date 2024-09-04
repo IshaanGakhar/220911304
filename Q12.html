@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Nested Boxes</title>
+    <style>
+        body {
+            background-color: blue;
+            color: black;
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+
+        .outer-box {
+            padding: 50px;
+            background-color: grey;
+            text-align: left;
+        }
+
+        .inner-box {
+            padding: 50px;
+            background-color: red;
+            text-align: left;
+        }
+
+        .outer-box-yellow {
+            padding: 90px;
+            background-color: yellow;
+            color: black;
+            text-align: left;
+            align-self: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="inner-box">
+            This is a red box inside a grey box.
+        </div>
+    </div>
+    <div class="outer-box-yellow">
+        <div class="inner-box">
+            This is a red box inside a yellow box.
+        </div>
+    </div>
+</body>
+</html>
